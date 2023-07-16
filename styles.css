@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 120px auto 120px auto;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    width: 200px;
+    height: 400px;
+    padding: 50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+    width: 200px;
+    height: 400px;
+    padding: 50px;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    width: 200px;
+    height: 400px;
+    padding: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+.btn {
+    width: 150px;
+    margin-top: 8rem;
+    padding: 15px 25px 15px 25px;
+    background-color: hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+
+.sedan-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan-btn:hover{
+    border-color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.suv-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.suv-btn:hover{
+    border-color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury-btn:hover{
+    border-color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 600px){
+    .sedan{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 15px;
+    }
+
+    .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+   
+    .card {
+        flex-direction: column;
+    }
+
+    .sedan{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 15px;
+    }
+
+    .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+}
